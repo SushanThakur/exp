@@ -1,0 +1,53 @@
+@import './config';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// body{
+//   // font-family: $default-font;
+//   overflow-x: hidden;
+// }
+
+
+.section-container{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+    nav{
+      width: 80vw;
+      max-width: 1400px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .featured-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 386px);
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section-container{
+    
+    .section{
+      max-width: 100vw;
+
+      nav{
+        width: 94vw;
+      }
+    }
+  }
+}

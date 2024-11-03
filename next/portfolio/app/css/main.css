@@ -38,7 +38,7 @@ html {
   justify-content: center;
 }
 .section-container .leftAlign {
-  width: 100%;
+  width: 80vw;
   max-width: 1400px;
   display: flex;
   flex-direction: column;

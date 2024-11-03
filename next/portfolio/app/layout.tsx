@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="light">
-      <link rel="shortcut icon" href="/pfp.jpg" type="image/x-icon" />
+      <link rel="shortcut icon" href="/pfp-circular.png" type="image/x-icon" />
       <body>
         {children}
       </body>

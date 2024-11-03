@@ -22,8 +22,8 @@ html{
   justify-content: center;
 
   .leftAlign{
-    width: 100%;
-    max-width: $max-width;
+    width: 80vw;
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

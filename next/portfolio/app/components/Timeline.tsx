@@ -76,7 +76,7 @@ function TimelineCard(
         <div className="text-lg font-black">{props.heading}</div>
         {props.inst}
         <br />
-        {props.gpa} | {props.grade}
+        {props.gpa} GPA | {props.grade}
       </div>
       <hr />
     </>

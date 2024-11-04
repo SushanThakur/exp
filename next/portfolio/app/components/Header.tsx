@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Header() {
   return (
-    <header className='sticky top-0 z-10 flex items-center justify-center'>
+    <header className='sticky top-0 z-10 w-screen bg-white flex items-center justify-center'>
       <div className="navbar bg-base-100 max-w-[1600px]">
         <div className="navbar-start">
           <div className="dropdown">
@@ -29,12 +29,12 @@ function Header() {
               <li>
                 <Link href="/">Works</Link>
                 <ul className="p-2">
-                  <li><Link href="/">Design</Link></li>
-                  <li><Link href="/">Frontend</Link></li>
-                  <li><Link href="/">Robotics</Link></li>
+                  <li><Link href="/Works/Design">Design</Link></li>
+                  <li><Link href="/Works/Frontend">Frontend</Link></li>
+                  <li><Link href="/Works/Robotics">Robotics</Link></li>
                 </ul>
               </li>
-              <li><Link href="/">Blog</Link></li>
+              <li><Link href="/Blog">Blog</Link></li>
             </ul>
           </div>
           <Link href="/" className="btn btn-ghost text-xl">Sushant</Link>
@@ -47,13 +47,13 @@ function Header() {
               <details>
                 <summary>Works</summary>
                 <ul className="p-2">
-                  <li><Link href="/">Design</Link></li>
-                  <li><Link href="/">Frontend</Link></li>
-                  <li><Link href="/">Robotics</Link></li>
+                  <li><Link href="/Works/Design">Design</Link></li>
+                  <li><Link href="/Works/Frontend">Frontend</Link></li>
+                  <li><Link href="/Works/Robotics">Robotics</Link></li>
                 </ul>
               </details>
             </li>
-            <li><Link href="/">Blog</Link></li>
+            <li><Link href="/Blog">Blog</Link></li>
           </ul>
         </div>
         <div className="navbar-end">

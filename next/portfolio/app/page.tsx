@@ -2,44 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "./components/Header"
 import Footer from "./components/Footer";
-import Card from "./components/Card";
+import Cards from "./components/Cards";
 import Certficates from "./components/Certficates";
 
 export default function Home() {
-
-  const postCard = {
-    title: "Getting Started With ROS 2: A Beginner's Guide",
-    author: "Sushant Thakur",
-    date: "Sep 24 2024",
-    shortDesc: "Robotics is evolving rapidly, and with the rise of powerful open-source tools like ROS (Robot Operating System), it's easier than ever to develop and control robots.",
-  }
-
-  const cert1 = {
-    img: '/python-bootcamp.webp',
-    title: 'Python Bootcamp 2021',
-    date: '2021',
-    cat1: 'Programming',
-    cat2: '',
-    desc: "I completed this course while I was in 9th grade, which was a significant milestone for me. Since I was already familiar with C-Programming concepts, learning Python became much easier for me. This prior knowledge not only accelerated my learning but also allowed me to appreciate Python’s simplicity and flexibility in comparison to C. ",
-  }
-
-  const cert2 = {
-    img: 'cProgrammingWorkshop.webp',
-    title: '7 Days Wrokshop on C-Programming',
-    date: '2021',
-    cat1: 'Programming',
-    cat2: '',
-    desc: "C was the first programming language I learned, starting in 7th grade, though I found it too complex initially and completed it in 8th grade. In 9th grade, I participated in this workshop meant for bachelor's students and secured 2nd place. The coordinators were so impressed that they refunded my enrollment fee and praised my skills. They encouraged my parents to support me in my programming journey.",
-  }
-
-  const cert3 = {
-    img: 'https://sushant.uk/assets/media/personal/certificates/locusParticipant.webp',
-    title: 'Winner of Plus Two Award In LOCUS 2024 Exhibition',
-    date: '2024',
-    cat1: 'Robotics',
-    cat2: 'Programming',
-    desc: "I created a 5DOF robotic arm, named 'Armikochan,' and showcased it at the LOCUS 2024 exhibition, where it received an overwhelmingly positive response. A local newspaper even featured an article about the project, and my high school shared it on their page. This experience helped me build valuable contacts and gain recognition. (more about this project in 'Works' tab) ",
-  }
 
   return (
     <div>
@@ -74,7 +40,7 @@ export default function Home() {
           </section>
         </div>
 
-        <div className="section-container bg-green-500 py-10">
+        <div className="section-container bg-green-200 py-10">
           <section className="section">
             <nav className="font-semibold">
               <h2>Featured Posts</h2>
@@ -82,9 +48,7 @@ export default function Home() {
             </nav>
             <div className="featured-container">
               {/* Cart Starts */}
-              <Card title={postCard.title} author={postCard.author} date={postCard.date} shortDesc={postCard.shortDesc} />
-              <Card title={postCard.title} author={postCard.author} date={postCard.date} shortDesc={postCard.shortDesc} />
-              <Card title={postCard.title} author={postCard.author} date={postCard.date} shortDesc={postCard.shortDesc} />
+              <Cards />
               {/* Cart Ends */}
             </div>
           </section>

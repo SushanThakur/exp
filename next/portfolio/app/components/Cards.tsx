@@ -1,6 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
 
+const postCard = {
+  title: "Getting Started With ROS 2: A Beginner's Guide",
+  author: "Sushant Thakur",
+  date: "Sep 24 2024",
+  shortDesc: "Robotics is evolving rapidly, and with the rise of powerful open-source tools like ROS (Robot Operating System), it's easier than ever to develop and control robots.",
+}
+
+function Cards() {
+  return (
+    <>
+      <Card {...postCard} />
+      <Card {...postCard} />
+      <Card {...postCard} />
+    </>
+  )
+}
+
 function Card(
   props: {
     title: string,
@@ -35,4 +52,4 @@ function Card(
   );
 }
 
-export default Card;  
+export default Cards;  

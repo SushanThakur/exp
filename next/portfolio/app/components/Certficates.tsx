@@ -49,7 +49,7 @@ function Certficate(
 ) {
   return (
     <div>
-      <div className="card bg-blue-200 w-96 shadow-xl p-4 rounded-none hoverEff animationAppear">
+      <div className="card bg-cyan-200 w-96 shadow-xl p-4 rounded-none hoverEff animationAppear">
         <figure>
           <img
             src={props.img}

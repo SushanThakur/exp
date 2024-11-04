@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Certficate from '../components/Certficate';
+import Certficates from '../components/Certficates';
 import Timeline from '../components/Timeline';
 import Skills from '../components/Skills';
 import Footer from '../components/Footer';
@@ -56,13 +56,11 @@ function Page() {
             </a>
 
             <h2>Certificates</h2>
-            <div className="featured-container">
-              {/* Cart Starts */}
-              <Certficate {...cert1} />
-              <Certficate {...cert1} />
-              <Certficate {...cert1} />
-              {/* Cart Ends */}
-            </div>
+          </div>
+          <div className="featured-container">
+            {/* Cart Starts */}
+            <Certficates />
+            {/* Cart Ends */}
           </div>
         </section>
       </div>

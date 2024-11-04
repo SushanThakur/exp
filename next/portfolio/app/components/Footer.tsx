@@ -13,8 +13,8 @@ function Footer() {
         </nav>
         <nav>
           <h6 className="footer-title">About</h6>
-          <Link href="/" className="link link-hover">About Me</Link>
-          <Link href="/" className="link link-hover">Contact</Link>
+          <Link href="/AboutMe" className="link link-hover">About Me</Link>
+          <Link href="/Contact" className="link link-hover">Contact</Link>
           <Link href="/" className="link link-hover">Works</Link>
           <Link href="/" className="link link-hover">Blog</Link>
         </nav>

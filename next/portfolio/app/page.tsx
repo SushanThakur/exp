@@ -3,7 +3,7 @@ import Image from "next/image";
 import Header from "./components/Header"
 import Footer from "./components/Footer";
 import Card from "./components/Card";
-import Certficate from "./components/Certficate";
+import Certficates from "./components/Certficates";
 
 export default function Home() {
 
@@ -15,6 +15,24 @@ export default function Home() {
   }
 
   const cert1 = {
+    img: '/python-bootcamp.webp',
+    title: 'Python Bootcamp 2021',
+    date: '2021',
+    cat1: 'Programming',
+    cat2: '',
+    desc: "I completed this course while I was in 9th grade, which was a significant milestone for me. Since I was already familiar with C-Programming concepts, learning Python became much easier for me. This prior knowledge not only accelerated my learning but also allowed me to appreciate Python’s simplicity and flexibility in comparison to C. ",
+  }
+
+  const cert2 = {
+    img: 'cProgrammingWorkshop.webp',
+    title: '7 Days Wrokshop on C-Programming',
+    date: '2021',
+    cat1: 'Programming',
+    cat2: '',
+    desc: "C was the first programming language I learned, starting in 7th grade, though I found it too complex initially and completed it in 8th grade. In 9th grade, I participated in this workshop meant for bachelor's students and secured 2nd place. The coordinators were so impressed that they refunded my enrollment fee and praised my skills. They encouraged my parents to support me in my programming journey.",
+  }
+
+  const cert3 = {
     img: 'https://sushant.uk/assets/media/personal/certificates/locusParticipant.webp',
     title: 'Winner of Plus Two Award In LOCUS 2024 Exhibition',
     date: '2024',
@@ -35,15 +53,15 @@ export default function Home() {
             </div>
           </div>
           <section className="text-center flex flex-col items-center gap-4 max-w-[94vw] sm:text-left sm:items-start sm:max-w-[600px] lg:max-w-[800px]">
-            <h1 className="text-4xl font-bold">Hi, I am Sushant, <br className="hidden sm:flex" />
+            <h1 className="text-3xl font-bold">Hi, I am Sushant, <br className="hidden sm:flex" />
               Electrical Engineering Student.
             </h1>
-            <p className="text-lg">
+            <p className="">
               I am a First Year Electrical Engineering student with a passion for robotics, system design, and programming. I enjoy working on complex robotic projects and have gained hands-on experience in designing...
               <span className="hidden">
                 innovative solutions. My dedication to continuous learning and problem-solving drives me to push the boundaries of technology and engineering through creative and efficient designs.
               </span>
-              <Link href='/' className="font-semibold"> Read more</Link>
+              <Link href='/AboutMe' className="font-semibold"> Read more</Link>
             </p>
             <form action="/Resume.pdf">
               <button className="btn sm:btn-sm md:btn-md lg:btn-lg max-w-[300px]">
@@ -56,7 +74,7 @@ export default function Home() {
           </section>
         </div>
 
-        <div className="section-container">
+        <div className="section-container bg-green-500 py-10">
           <section className="section">
             <nav className="font-semibold">
               <h2>Featured Posts</h2>
@@ -76,13 +94,11 @@ export default function Home() {
           <section className="section">
             <nav className="font-semibold">
               <h2>Featured Certificates</h2>
-              <Link href='/'>View All</Link>
+              <Link href='/AboutMe'>View All</Link>
             </nav>
             <div className="featured-container">
               {/* Cart Starts */}
-              <Certficate {...cert1} />
-              <Certficate {...cert1} />
-              <Certficate {...cert1} />
+              <Certficates />
               {/* Cart Ends */}
             </div>
           </section>

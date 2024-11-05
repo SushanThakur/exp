@@ -2,6 +2,7 @@ import React from 'react';
 import Cards from '@/app/components/Cards';
 import Header from '@/app/components/Header';
 import Design from '@/app/components/Design';
+import Footer from '@/app/components/Footer';
 
 function Page() {
   return (
@@ -19,6 +20,8 @@ function Page() {
           </div>
         </section>
       </div>
+
+      <Footer />
     </>
   );
 }

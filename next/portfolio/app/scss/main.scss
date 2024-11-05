@@ -55,7 +55,21 @@ html{
       max-width: 1400px;
       display: flex;
       flex-direction: row;
+      align-items: center;
       justify-content: space-between;
+      font-size: 1.2rem;
+      font-weight: 500;
+
+      .a{
+        font-size: 0.9rem;
+        font-weight: 700;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+
     }
 
 
@@ -86,6 +100,7 @@ html{
 
       nav{
         width: 94vw;
+        font-size: 1rem;
       }
     }
   }

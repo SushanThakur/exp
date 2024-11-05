@@ -23,11 +23,11 @@ function Header() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/AboutMe">About Me</Link></li>
+              <li><Link href="/About">About</Link></li>
               <li>
-                <Link href="/">Works</Link>
+                <Link href="/Works">Works</Link>
                 <ul className="p-2">
                   <li><Link href="/Works/Design">Design</Link></li>
                   <li><Link href="/Works/Frontend">Frontend</Link></li>
@@ -40,9 +40,9 @@ function Header() {
           <Link href="/" className="btn btn-ghost text-xl">Sushant</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 ">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/AboutMe">About Me</Link></li>
+            <li><Link href="/About">About</Link></li>
             <li>
               <details>
                 <summary>Works</summary>

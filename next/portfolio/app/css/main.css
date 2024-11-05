@@ -67,7 +67,17 @@ html {
   max-width: 1400px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.section-container .section nav .a {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.section-container .section nav .a:hover {
+  text-decoration: underline;
 }
 .section-container .section .featured-container {
   display: grid;
@@ -90,6 +100,7 @@ html {
   }
   .section-container .section nav {
     width: 94vw;
+    font-size: 1rem;
   }
 }
 .animationAppear {

@@ -27,7 +27,7 @@ export default function Home() {
               <span className="hidden">
                 innovative solutions. My dedication to continuous learning and problem-solving drives me to push the boundaries of technology and engineering through creative and efficient designs.
               </span>
-              <Link href='/AboutMe' className="font-semibold"> Read more</Link>
+              <Link href='/About' className="font-semibold"> Read more</Link>
             </p>
             <form action="/Resume.pdf">
               <button className="btn sm:btn-sm md:btn-md lg:btn-lg max-w-[300px]">
@@ -40,11 +40,11 @@ export default function Home() {
           </section>
         </div>
 
-        <div className="section-container bg-green-200 py-10">
+        <div className="section-container bg-green-200 py-10 pb-20">
           <section className="section">
             <nav className="font-semibold">
               <h2>Featured Posts</h2>
-              <Link href='/'>View All</Link>
+              <Link href='/Blog' className="a">View All</Link>
             </nav>
             <div className="featured-container">
               {/* Cart Starts */}
@@ -58,7 +58,7 @@ export default function Home() {
           <section className="section">
             <nav className="font-semibold">
               <h2>Featured Certificates</h2>
-              <Link href='/AboutMe'>View All</Link>
+              <Link href='/About' className="a">View All</Link>
             </nav>
             <div className="featured-container">
               {/* Cart Starts */}

@@ -48,7 +48,7 @@ export default function Page() {
     <div>
       <Header />
 
-      <div className="section-container min-h-[80vh] mt-12">
+      <div className="section-container min-h-[60vh] mt-12">
         <section className="section">
           <h1 className='text-2xl font-semibold'>Contact Form</h1>
           <form onSubmit={handleSubmit} id='contactForm' action="#" className='flex flex-col gap-4'>
